@@ -31,6 +31,28 @@ module.exports = require('./webpack.base.babel')({
     chunkFilename: '[name].chunk.js'
   },
 
+  devServer: {
+    port:8077,
+    open: true,
+    disableHostCheck: true,
+    overlay: {
+      warnings: false,
+      errors: true
+    },
+    proxy: {
+      '^/vtproxy': {
+        target: 'http://http://10.30.66.29:8088',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/vtproxy': ''
+        }
+      },
+    }
+    // after: require('./mock/mock-server.js')
+  },
+
+
   optimization: {
     splitChunks: {
       chunks: 'all',

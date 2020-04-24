@@ -42,7 +42,7 @@ function refreshToken (response: AxiosResponse) {
 export function request (config: AxiosRequestConfig): AxiosPromise
 export function request (url: string, options?: AxiosRequestConfig): AxiosPromise
 export default function request (url: any, options?: AxiosRequestConfig): AxiosPromise {
-  return axios(url, options)
+  return axios(url, { withCredentials: true, ...options })
     .then(refreshToken)
     .then(parseJSON)
 }
