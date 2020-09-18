@@ -872,21 +872,21 @@ export class Projects extends React.PureComponent<IProjectsProps, IProjectsState
       <div className={wrapper}>
         <div className={styles.search}>
           <div  className={styles.searchWrapper}>
-            <label htmlFor="newtab-search-text" className={styles.searchLabel}/>
-            <input
-              id="newtab-search-text"
-              placeholder="Search the Visualis"
-              title="Search the Web"
-              autoComplete="off"
-              onFocus={this.bindDocumentKeypress}
-              onBlur={this.unbindDocumentKeypress}
-              onChange={this.onChangeKeywords}
-              value={this.state.keywords}
-              type="search"
-            />
-            <span className={styles.searchButton} onClick={this.searchProject}>
-              <i className="iconfont icon-forward"/>
-            </span>
+            {/*<label htmlFor="newtab-search-text" className={styles.searchLabel}/>*/}
+            {/*<input*/}
+            {/*  id="newtab-search-text"*/}
+            {/*  placeholder="Search the Visualis"*/}
+            {/*  title="Search the Web"*/}
+            {/*  autoComplete="off"*/}
+            {/*  onFocus={this.bindDocumentKeypress}*/}
+            {/*  onBlur={this.unbindDocumentKeypress}*/}
+            {/*  onChange={this.onChangeKeywords}*/}
+            {/*  value={this.state.keywords}*/}
+            {/*  type="search"*/}
+            {/*/>*/}
+            {/*<span className={styles.searchButton} onClick={this.searchProject}>*/}
+            {/*  <i className="iconfont icon-forward"/>*/}
+            {/*</span>*/}
           </div>
           {/*<div className={searchKeywordsStyle}>*/}
             {/*{searchKeywords}*/}
