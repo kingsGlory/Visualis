@@ -41,7 +41,7 @@ module.exports = require('./webpack.base.babel')({
     },
     proxy: {
       '^/vtproxy': {
-        target: 'http://http://10.30.66.29:8088',
+        target: 'https://saas.ctyun.cn:8086',
         ws: true,
         changeOrigin: true,
         pathRewrite: {
