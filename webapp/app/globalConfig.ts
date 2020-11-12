@@ -34,12 +34,12 @@ export default {
   },
   sit: {
     iframeUrl: '/dss/visualis/#',
-    host: '/api/rest_s/v1/visualis',
-    shareHost: '/dss/visualis/share.html',
+    host: '/luban/api/rest_s/v1/visualis',
+    shareHost: '/luban/dss/visualis/share.html',
   },
   production: {
-    host: '/api/rest_s/v1/visualis',
-    shareHost: '/dss/visualis/share.html',
+    host: '/luban/api/rest_s/v1/visualis',
+    shareHost: '/luban/dss/visualis/share.html',
     iframeUrl: '/dss/visualis/#',
   }
 }
